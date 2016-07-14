@@ -11,7 +11,7 @@ namespace BSApi.Data
 
         public override string ToString()
         {
-            return "--> " + series;
+            return series;
         }
     }
 }

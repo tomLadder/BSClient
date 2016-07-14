@@ -19,12 +19,14 @@
             <Image x:Name="image1_Copy2" HorizontalAlignment="Left" Height="25" Margin="297,10,0,0" VerticalAlignment="Top" Width="25"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="288" Margin="0,45,0,0" VerticalAlignment="Top" Width="144" Background="#424242">
-            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="17" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="101" FontFamily="Roboto" KeyDown="txtSearch_KeyDown"/>
-            <ScrollViewer HorizontalAlignment="Left" Height="246" Margin="0,32,0,0" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto" Width="144">
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="17" Margin="11,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" FontFamily="Roboto" KeyDown="txtSearch_KeyDown"/>
+            <ScrollViewer HorizontalAlignment="Left" Height="246" Margin="0,32,0,0" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto" Width="144" CanContentScroll="True">
                 <StackPanel x:Name="spSeries" Height="246" Width="120"/>
             </ScrollViewer>
             <Image x:Name="imgOk" Source="Images/Ok.png" HorizontalAlignment="Left" Height="17" Margin="116,10,0,0" VerticalAlignment="Top" Width="17" Cursor="Hand" MouseDown="imgOk_MouseDown" />
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="288" Margin="144,45,0,0" VerticalAlignment="Top" Width="412" Background="#BDBDBD"/>
+        <Grid HorizontalAlignment="Left" Height="288" Margin="144,45,0,0" VerticalAlignment="Top" Width="412" Background="#BDBDBD">
+            <StackPanel HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="412"/>
+        </Grid>
     </Grid>
 </Window>

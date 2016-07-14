@@ -42,6 +42,21 @@ namespace BSApi
             return GetSeason(Convert.ToInt32(seriesInformation.id), seasonId);
         }
 
+        public static List<Season> GetSeasons(int seriesId)
+        {
+            List<Season> lSeason = new List<Season>();
+            for(int i=1;i<=GetSeasonCount(seriesId);i++)
+            {
+                lSeason.Add(GetSeason(seriesId, i));
+            } 
+            return lSeason;
+        }
+
+        public static List<Season> GetSeasons(SeriesInformation seriesInformation)
+        {
+            return GetSeasons(Convert.ToInt32(seriesInformation.id));
+        }
+
         public static EpisodeInformation GetEpisode(int seriesId, int seasonId, int episodeId)
         {
             return JsonConvert.DeserializeObject<EpisodeInformation>(HTTPRequester.LaunchApiRequest($"series/{seriesId}/{seasonId}/{episodeId}"));
@@ -51,6 +66,7 @@ namespace BSApi
         {
             return GetEpisode(Convert.ToInt32(season.series.id), Convert.ToInt32(season.season), episodeId);
         }
+
 
         public static Link GetLink(int linkId)
         {
