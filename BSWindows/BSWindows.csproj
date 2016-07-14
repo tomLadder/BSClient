@@ -100,6 +100,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Config.png" />
+    <Resource Include="Images\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Ok.png" />
+  </ItemGroup>
   <Import Project="..\BSApi\BSApi.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
