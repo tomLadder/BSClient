@@ -5,28 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BSWindows"
         mc:Ignorable="d"
-        Title="BS-Client Windows" Height="362.791" Width="562.21" ResizeMode="NoResize">
+        Title="BS-Client Windows" Height="362.791" Width="163.81" ResizeMode="NoResize">
     <Grid Margin="0,0,0,-0.2">
-        <Grid HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="144" Background="#FFB300">
+        <Grid HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="158" Background="#FFB300" Margin="0,0,-0.4,0">
             <Image x:Name="image" Source="/Images/Video.png" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="25"/>
             <Label x:Name="label" Content="BS Windows" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="39,8,0,0" VerticalAlignment="Top" Width="105" FontFamily="Roboto" FontSize="17"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="45" Margin="144,0,0,0" VerticalAlignment="Top" Width="412" Background="#424242">
-            <Image x:Name="imgHelp" Source="/Images/Help.png"  HorizontalAlignment="Left" Height="25" Margin="377,10,0,0" VerticalAlignment="Top" Width="25" Stretch="UniformToFill" Cursor="Hand">
-            </Image>
-            <Image x:Name="imgConfig" Source="/Images/Config.png" HorizontalAlignment="Left" Height="25" Margin="347,10,0,0" VerticalAlignment="Top" Width="25" Cursor="Hand"/>
-            <Image x:Name="image1_Copy1" HorizontalAlignment="Left" Height="25" Margin="322,10,0,0" VerticalAlignment="Top" Width="25"/>
-            <Image x:Name="image1_Copy2" HorizontalAlignment="Left" Height="25" Margin="297,10,0,0" VerticalAlignment="Top" Width="25"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="288" Margin="0,45,0,0" VerticalAlignment="Top" Width="144" Background="#424242">
+        <Grid HorizontalAlignment="Left" Height="288" Margin="0,45,-0.4,0" VerticalAlignment="Top" Width="158" Background="#424242">
             <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="17" Margin="11,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" FontFamily="Roboto" KeyDown="txtSearch_KeyDown"/>
             <ScrollViewer HorizontalAlignment="Left" Height="246" Margin="0,32,0,0" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto" Width="144" CanContentScroll="True">
                 <StackPanel x:Name="spSeries" Height="246" Width="120"/>
             </ScrollViewer>
             <Image x:Name="imgOk" Source="Images/Ok.png" HorizontalAlignment="Left" Height="17" Margin="116,10,0,0" VerticalAlignment="Top" Width="17" Cursor="Hand" MouseDown="imgOk_MouseDown" />
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="288" Margin="144,45,0,0" VerticalAlignment="Top" Width="412" Background="#BDBDBD">
-            <StackPanel HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="412"/>
         </Grid>
     </Grid>
 </Window>
